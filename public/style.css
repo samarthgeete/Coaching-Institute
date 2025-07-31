@@ -1,0 +1,227 @@
+/* === Global Styles === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* === Header === */
+.main-header {
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+.menu-link {
+    display: none;
+    font-size: 20px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav li a {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav li a:hover {
+    color: #007BFF;
+}
+
+/* === Home Section === */
+.main-banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.caption h6 {
+    font-size: 20px;
+}
+
+.caption h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main-button a {
+    padding: 10px 25px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* === About Features Section === */
+.features .features-post {
+    background-color: #f7f7f7;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.features-post:hover {
+    transform: translateY(-5px);
+}
+
+.features-content .content-show h4 {
+    font-size: 20px;
+    color: #2a2a2a;
+}
+
+.features-content .content-hide p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* === Courses Section === */
+.section-heading h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.down-content {
+    padding: 15px;
+}
+
+.down-content h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.text-button-pay a,
+.text-button-free a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+}
+
+.text-button-pay a {
+    background-color: #007BFF;
+}
+
+/* === Register Form === */
+form#contact {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+form input.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* === Footer === */
+footer {
+    background-color: #222;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* === Responsive (Optional) === */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-link {
+        display: block;
+    }
+}

@@ -1,0 +1,111 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+#nav {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #66ffe3);
+  padding: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+/* Logo */
+.logo a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo em {
+  font-style: normal;
+  color: mediumvioletred;
+}
+
+/* Menu Icon */
+.menu-link {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Nav Menu */
+.main-nav {
+  display: flex;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(to right, #ffb347, #ffcc33);
+}
+
+.main-menu li a:hover {
+  background-image: linear-gradient(to right, #66ffe3, #6c63ff);
+  color: black;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu-link {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    background: linear-gradient(180deg, #ff6ec4, #7873f5);
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-menu li a {
+    background: transparent;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,94 @@
+/* Courses Section */
+.courses-section {
+  padding: 60px 30px;
+  background-color: #f9f9f9;
+}
+
+.section-heading h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* Grid Layout */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Course Card */
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.pay-btn,
+.free-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+
+.pay-btn {
+  background-color: #007BFF;
+}
+
+.free-btn {
+  background-color: #28a745;
+}
+
+.pay-btn:hover {
+  background-color: #0056b3;
+}
+
+.free-btn:hover {
+  background-color: #1e7e34;
+}
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+  .section-heading h2 {
+    font-size: 24px;
+  }
+
+  .course-card h3 {
+    font-size: 18px;
+  }
+
+  .course-card p {
+    font-size: 13px;
+  }
+}

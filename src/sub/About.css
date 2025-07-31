@@ -1,0 +1,98 @@
+/* About.css - Alternate Styling */
+
+.features {
+  background: linear-gradient(to right, #f0f4ff, #f9f9f9);
+  padding: 70px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.col-lg-4 {
+  flex: 1 1 30%;
+  max-width: 31%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.features-post {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: all 0.4s ease-in-out;
+}
+
+.features-post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.features-content {
+  padding: 30px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-show h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.content-show i {
+  color: #6a11cb;
+  margin-right: 10px;
+}
+
+.content-hide {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  color: #555;
+}
+
+.features-post:hover .content-hide {
+  opacity: 1;
+  max-height: 300px;
+  margin-top: 10px;
+}
+
+.scroll-to-section a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: #6a11cb;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.scroll-to-section a:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .col-lg-4 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
